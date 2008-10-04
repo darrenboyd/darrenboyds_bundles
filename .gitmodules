@@ -1,3 +1,6 @@
 [submodule "ruby-on-rails.tmbundle"]
 	path = ruby-on-rails.tmbundle
 	url = git://github.com/drnic/ruby-on-rails-tmbundle.git
+[submodule "ack.tmbundle"]
+	path = ack.tmbundle
+	url = git://github.com/protocool/ack-tmbundle.git
