@@ -1,0 +1,3 @@
+[submodule "ruby-on-rails.tmbundle"]
+	path = ruby-on-rails.tmbundle
+	url = git://github.com/drnic/ruby-on-rails-tmbundle.git
