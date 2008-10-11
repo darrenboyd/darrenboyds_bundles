@@ -13,3 +13,6 @@
 [submodule "ruby-shoulda.tmbundle"]
 	path = ruby-shoulda.tmbundle
 	url = git://github.com/drnic/ruby-shoulda-tmbundle.git
+[submodule "merb.tmbundle"]
+	path = merb.tmbundle
+	url = git://github.com/drnic/merb-tmbundle.git
