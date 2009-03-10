@@ -12,13 +12,12 @@ bundles = {
   'ruby-on-rails' => {:type => :git, :url => 'git://github.com/drnic/ruby-on-rails-tmbundle.git'},
   'ack'           => {:type => :git, :url => 'git://github.com/protocool/ack-tmbundle.git'},
   'git'           => {:type => :git, :url => 'git://github.com/timcharper/git-tmbundle.git'},
-  'rspec'         => {:type => :git, :url => 'git://github.com/dchelimsky/rspec-tmbundle.git'},
+  # 'rspec'         => {:type => :git, :url => 'git://github.com/dchelimsky/rspec-tmbundle.git'},
   'ruby-shoulda'  => {:type => :git, :url => 'git://github.com/drnic/ruby-shoulda-tmbundle.git'},
-  'merb'          => {:type => :git, :url => 'git://github.com/drnic/merb-tmbundle.git'},
-  'Ruby'          => {:type => :svn, :url => 'http://macromates.com/svn/Bundles/trunk/Bundles/Ruby.tmbundle'}
+  # 'merb'          => {:type => :git, :url => 'git://github.com/drnic/merb-tmbundle.git'},
+  'Ruby'          => {:type => :svn, :url => 'http://svn.textmate.org/trunk/Bundles/Ruby.tmbundle'},
+  # 'GraphViz'      => {:type => :svn, :url => 'http://svn.textmate.org/trunk/Bundles/Graphviz.tmbundle'},
 }
-
-
 
 
 base_dir = ENV['HOME'] / "Library/Application Support/TextMate"
@@ -53,7 +52,7 @@ def update_git(dir, url)
 end
 
 puts "Updating the Support folder."
-unless update_svn(base_dir / 'Support', 'http://macromates.com/svn/Bundles/trunk/Support')
+unless update_svn(base_dir / 'Support', 'http://svn.textmate.org/trunk/Support')
   puts "You seem to have a Support directory not under Subversion source control."
   puts "Sorry, I can't deal with that."
 end
