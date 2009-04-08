@@ -12,10 +12,11 @@ bundles = {
   'ruby-on-rails' => {:type => :git, :url => 'git://github.com/drnic/ruby-on-rails-tmbundle.git'},
   'ack'           => {:type => :git, :url => 'git://github.com/protocool/ack-tmbundle.git'},
   'git'           => {:type => :git, :url => 'git://github.com/timcharper/git-tmbundle.git'},
-  # 'rspec'         => {:type => :git, :url => 'git://github.com/dchelimsky/rspec-tmbundle.git'},
+  'rspec'         => {:type => :git, :url => 'git://github.com/dchelimsky/rspec-tmbundle.git'},
   'ruby-shoulda'  => {:type => :git, :url => 'git://github.com/drnic/ruby-shoulda-tmbundle.git'},
   # 'merb'          => {:type => :git, :url => 'git://github.com/drnic/merb-tmbundle.git'},
   'Ruby'          => {:type => :svn, :url => 'http://svn.textmate.org/trunk/Bundles/Ruby.tmbundle'},
+  'Ruby Haml'     => {:type => :git, :url => 'git://github.com/douglasjarquin/ruby-haml-tmbundle.git'},
   # 'GraphViz'      => {:type => :svn, :url => 'http://svn.textmate.org/trunk/Bundles/Graphviz.tmbundle'},
 }
 
