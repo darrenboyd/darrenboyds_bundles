@@ -15,7 +15,8 @@ bundles = {
   'rspec'         => {:type => :git, :url => 'git://github.com/dchelimsky/rspec-tmbundle.git'},
   'ruby-shoulda'  => {:type => :git, :url => 'git://github.com/drnic/ruby-shoulda-tmbundle.git'},
   # 'merb'          => {:type => :git, :url => 'git://github.com/drnic/merb-tmbundle.git'},
-  'Ruby'          => {:type => :svn, :url => 'http://svn.textmate.org/trunk/Bundles/Ruby.tmbundle'},
+  'Ruby'          => {:type => :git, :url => 'git://github.com/drnic/ruby-tmbundle.git'},
+  # 'Ruby'          => {:type => :svn, :url => 'http://svn.textmate.org/trunk/Bundles/Ruby.tmbundle'},
   'Ruby Haml'     => {:type => :git, :url => 'git://github.com/douglasjarquin/ruby-haml-tmbundle.git'},
   # 'GraphViz'      => {:type => :svn, :url => 'http://svn.textmate.org/trunk/Bundles/Graphviz.tmbundle'},
 }
@@ -57,12 +58,12 @@ unless update_svn(base_dir / 'Support', 'http://svn.textmate.org/trunk/Support')
   puts "You seem to have a Support directory not under Subversion source control."
   puts "Sorry, I can't deal with that."
 end
-puts ""
 
 require 'fileutils'
 FileUtils.mkdir_p(base_dir/'Bundles')
 
 bundles.each do |name, bundle|
+  puts ""
   puts "Updating Bundle: #{name}"
   case bundle[:type]
   when :git, :svn
