@@ -1,10 +1,9 @@
-
 Updating The Support Folder
 
 http://manual.macromates.com/en/bundles#support_folder
 
 % export LC_CTYPE=en_US.UTF-8
 % cd ~/Library/Application\ Support/TextMate
-% svn co http://macromates.com/svn/Bundles/trunk/Support
+% svn co http://svn.textmate.org/trunk/Support
 
 
